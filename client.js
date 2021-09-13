@@ -6,7 +6,7 @@ const loadRestOfPage = () => {
 };
 window.addEventListener("animationend", (e) => {
     if (e.animationName == "slideDownCenter") {
-        if (document.readyState == "complete") {
+        if (false && document.readyState == "complete") {
             loadRestOfPage();
         } else {
             id("logo").classList.replace("center-sliding", "center");
